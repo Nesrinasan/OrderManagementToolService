@@ -16,13 +16,23 @@ public class OrderProcessTool {
         this.orderClient = orderClient;
     }
 
+    @Tool(name = "orderReturnProcess", description = "initiates the order return process", returnDirect = true)
     public ReturnOrderProcessResponseDto orderReturnProcess(String orderNo, String productName, String reason){
         ReturnOrderRequestDto orderRequestDto = new ReturnOrderRequestDto();
         orderRequestDto.setOrderNo(orderNo);
         orderRequestDto.setReason(reason);
         orderRequestDto.setProductName(productName);
-        return  null;
+        return orderClient.orderReturnProcess(orderRequestDto);
 
     }
 
+    @Tool(name = "orderCancelProcess", description = "initiates the order cancel process")
+    public ReturnOrderProcessResponseDto orderCancelProcess(String orderNo, String productName, String reason){
+        ReturnOrderRequestDto orderRequestDto = new ReturnOrderRequestDto();
+        orderRequestDto.setOrderNo(orderNo);
+        orderRequestDto.setReason(reason);
+        orderRequestDto.setProductName(productName);
+        return null;
+
+    }
 }

@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(name = "OrderService")
 public interface OrderClient {
 
+    @PostMapping("/order/orderReturnProcess")
+    ReturnOrderProcessResponseDto orderReturnProcess(@RequestBody ReturnOrderRequestDto orderRequestDto);
 
 
 
