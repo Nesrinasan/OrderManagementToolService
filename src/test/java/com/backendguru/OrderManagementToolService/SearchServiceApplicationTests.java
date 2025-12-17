@@ -1,4 +1,4 @@
-package com.backendguru.SearchService;
+package com.backendguru.OrderManagementToolService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

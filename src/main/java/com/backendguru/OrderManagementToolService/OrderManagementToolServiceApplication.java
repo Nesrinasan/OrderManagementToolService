@@ -1,6 +1,6 @@
-package com.backendguru.SearchService;
+package com.backendguru.OrderManagementToolService;
 
-import com.backendguru.SearchService.service.OrderProcessTool;
+import com.backendguru.OrderManagementToolService.service.OrderProcessTool;
 import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.ai.tool.method.MethodToolCallbackProvider;
 import org.springframework.boot.SpringApplication;
@@ -10,10 +10,10 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 @EnableFeignClients
-public class MailToolServiceApplication {
+public class OrderManagementToolServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MailToolServiceApplication.class, args);
+		SpringApplication.run(OrderManagementToolServiceApplication.class, args);
 	}
 
 	@Bean

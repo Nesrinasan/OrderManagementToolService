@@ -1,9 +1,8 @@
-package com.backendguru.SearchService.service;
+package com.backendguru.OrderManagementToolService.service;
 
-import com.backendguru.SearchService.clients.OrderClient;
-import com.backendguru.SearchService.clients.OrderRestClient;
-import com.backendguru.SearchService.dto.ReturnOrderProcessResponseDto;
-import com.backendguru.SearchService.dto.ReturnOrderRequestDto;
+import com.backendguru.OrderManagementToolService.clients.OrderClient;
+import com.backendguru.OrderManagementToolService.dto.ReturnOrderProcessResponseDto;
+import com.backendguru.OrderManagementToolService.dto.ReturnOrderRequestDto;
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.stereotype.Service;
 
