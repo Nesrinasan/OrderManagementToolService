@@ -10,10 +10,10 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 @EnableFeignClients
-public class OrderManagementToolServiceApplication {
+public class MailToolServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OrderManagementToolServiceApplication.class, args);
+		SpringApplication.run(MailToolServiceApplication.class, args);
 	}
 
 	@Bean

@@ -1,11 +1,11 @@
 spring:
   application:
-    name: OrderManagementToolService
+    name: MailToolService
   ai:
     mcp:
       server:
         enabled: true
-        name: demo-mcp-server
+        name: mail-tool-server
         version: 1.0.0
         type: SYNC
         stdio: false
@@ -31,4 +31,4 @@ logging:
     io.modelcontextprotocol: DEBUG
 
 server:
-  port: 8389
+  port: 8381
